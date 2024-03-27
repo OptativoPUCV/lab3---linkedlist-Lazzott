@@ -12,3 +12,18 @@ Wed 27 Mar 2024 08:18:38 PM UTC:
  1 file changed, 7 insertions(+), 1 deletion(-)
  tests:  0|0
 25b3cbe
+Wed 27 Mar 2024 08:25:34 PM UTC: 
+ list.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   41 |     if(list==NULL) return NULL;.
+      |     ^~
+list.c:41:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   41 |     if(list==NULL) return NULL;.
+      |                                ^
+list.c:41:32: error: expected expression before ‘.’ token
+cc1: all warnings being treated as errors
+Compilation failed
+81a47d4
