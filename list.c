@@ -145,8 +145,6 @@ void * popFront(List * list)
     void * data = aux->data;
     free(aux);
     return data;
-    list->current = list->head;
-    return popCurrent(list);
 }
 
 void * popBack(List * list) 
@@ -163,8 +161,7 @@ void * popBack(List * list)
         list->tail->next = NULL;
     void * data = aux->data;
     free(aux);
-    list->current = list->tail;
-    return popCurrent(list);
+    return data;
 }
 
 void * popCurrent(List * list) 
