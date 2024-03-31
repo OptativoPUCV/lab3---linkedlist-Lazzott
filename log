@@ -80,3 +80,14 @@ Sun 31 Mar 2024 12:18:34 AM UTC:
  tests:  11|1
 total_score: 55/70
 21f1cb7
+Sun 31 Mar 2024 01:04:40 AM UTC: 
+ list.c | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++------
+ 1 file changed, 51 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popBack’:
+list.c:164:12: error: unused variable ‘data’ [-Werror=unused-variable]
+  164 |     void * data = aux->data;
+      |            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+de10206
